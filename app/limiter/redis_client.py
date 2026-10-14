@@ -7,9 +7,7 @@ settings = get_settings()
 
 
 def get_redis() -> Redis:
-    return Redis(
-        host=settings.REDIS_HOST,
-        port=settings.REDIS_PORT,
-        db=settings.REDIS_DB,
+    return Redis.from_url(
+        settings.REDIS_URL,
         decode_responses=False,
     )
