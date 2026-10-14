@@ -4,6 +4,13 @@ A backend API Gateway built with Python and FastAPI that provides API-key
 authentication, Redis-backed Token Bucket rate limiting, request logging,
 and backend API forwarding.
 
+## 🔗 Live Demo
+
+**Swagger API Documentation:**  
+https://secure-api-gateway-ay43.onrender.com/docs
+
+**Health Check:**  
+https://secure-api-gateway-ay43.onrender.com/health
 ## Features
 
 - API-key authentication using `X-API-Key`
